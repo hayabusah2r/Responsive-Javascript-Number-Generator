@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>Javascript Random Number Generator</h1></center>
+    <center><p>Made by <a href="https://seaams-portfolio-v2.netlify.app/" target="_blank">Seaam</a></p></center>
+    <center><p class="desc">This is a random number generator made with Javascript. Clicking the buttons below will give you some random numbers of specific ranges.</p></center>
+    <center><h2>Numbers Between 1 and 10</h2></center>
+    <center><p id="info">The button below will pick a random number between 1 and 10 (including both)</p></center>
+    <center><button onclick="document.getElementById('number1').innerHTML = getRndInteger(1,10)">Click Here</button></center>
+    <center><p id="number1"></p></center>
+
+    <script>
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+    }
+    </script>
+    <center><h2>Numbers Between 1 and 50</h2></center>
+    <center><p id="info">The button below will pick a random number between 1 and 50 (including both)</p></center>
+    <center><button onclick="document.getElementById('number2').innerHTML = getRndInteger(1,50)">Click Here</button></center>
+    <center><p id="number2"></p></center>
+    <center><h2>Numbers Between 1 and 100</h2></center>
+        <center><p id="info">The button below will pick a random number between 1 and 100 (including both)</p></center>
+    <center><button onclick="document.getElementById('number3').innerHTML = getRndInteger(1,100)">Click Here</button></center>
+    <center><p id="number3"></p></center>
+    <center><h2>Numbers Between 1 and 1000</h2></center>
+    <center><p id="info">The button below will pick a random number between 1 and 1000 (including both)</p></center>
+    <center><button onclick="document.getElementById('number4').innerHTML = getRndInteger(1,1000)">Click Here</button></center>
+    <center><p id="number4"></p></center>
+
+    <center><h2>Feedback</h2></center>
+    <center><p id="feedback">If you have any queries, or you just want to send a message, you can send it <a href="https://formsubmit.co/el/kowomi" target="_blank">here</a></p></center>
+</body>
+</html>
